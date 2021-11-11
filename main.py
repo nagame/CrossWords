@@ -216,24 +216,24 @@ class Dictionary:
             'len_max': 0,  # shortest word's length
             'len_min': 30,  # longest word's length
             'len_avg': 0,  # average word length
-            'letters1': {},  # number of total occurances of given letters
-            'letters2': {},  # number of total occurances of 2-letter pairs
-            'letters3': {},  # number of total occurances of 3-letter pairs
-            'letters4': {},  # number of total occurances of 4-letter pairs
-            'letters5': {},  # number of total occurances of 5-letter pairs
-            'letters6': {},  # number of total occurances of 6-letter pairs
-            'letters7': {},  # number of total occurances of 7-letter pairs
-            'letters8': {},  # number of total occurances of 8-letter pairs
-            'letters9': {},  # number of total occurances of 9-letter pairs
-            'letters10': {},  # number of total occurances of 10-letter pairs
-            'letters11': {},  # number of total occurances of 11-letter pairs
-            'letters12': {},  # number of total occurances of 12-letter pairs
-            'letters13': {},  # number of total occurances of 13-letter pairs
-            'letters14': {},  # number of total occurances of 14-letter pairs
-            'letters15': {},  # number of total occurances of 15-letter pairs
-            'letters16': {},  # number of total occurances of 16-letter pairs
-            'letters17': {},  # number of total occurances of 17-letter pairs
-            'letters18': {},  # number of total occurances of 18-letter pairs
+            'letters1': {},  # 1-letter sequences
+            'letters2': {},  # 2-letter sequences
+            'letters3': {},  # 3-letter sequences
+            'letters4': {},  # 4-letter sequences
+            'letters5': {},  # 5-letter sequences
+            'letters6': {},  # 6-letter sequences
+            'letters7': {},  # 7-letter sequences
+            'letters8': {},  # 8-letter sequences
+            'letters9': {},  # 9-letter sequences
+            'letters10': {},  # 11-letter sequences
+            'letters11': {},  # 12-letter sequences
+            'letters12': {},  # 13-letter sequences
+            'letters13': {},  # 14-letter sequences
+            'letters14': {},  # 15-letter sequences
+            'letters15': {},  # 16-letter sequences
+            'letters16': {},  # 17-letter sequences
+            'letters17': {},  # 18-letter sequences
+            'letters18': {},  # 19-letter sequences
         }
 
         self.source_file = source_file
