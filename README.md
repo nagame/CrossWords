@@ -1,5 +1,5 @@
 # CrossWords
-A python module with tools for generating various crossword puzzles.
+A python 'module' with tools for generating various crossword puzzles.
 
 
 VERSION HISTORY :
