@@ -14,7 +14,6 @@ VERSION HISTORY :
   - class GridCrossWord: initially working conversion from string to Word/Cell structure
      still fixing minor details
   - class Word: modified _cells_to_sequences function: only convert cells containing actual letters
-    (more like a-z than %,& or _)
 - v1.4.1
   - class GridCrossWord: working on conversion from string to Word/Cell structure
 - v1.4
