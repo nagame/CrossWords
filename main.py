@@ -225,15 +225,15 @@ class Dictionary:
             'letters7': {},  # 7-letter sequences
             'letters8': {},  # 8-letter sequences
             'letters9': {},  # 9-letter sequences
-            'letters10': {},  # 11-letter sequences
-            'letters11': {},  # 12-letter sequences
-            'letters12': {},  # 13-letter sequences
-            'letters13': {},  # 14-letter sequences
-            'letters14': {},  # 15-letter sequences
-            'letters15': {},  # 16-letter sequences
-            'letters16': {},  # 17-letter sequences
-            'letters17': {},  # 18-letter sequences
-            'letters18': {},  # 19-letter sequences
+            'letters10': {},  # 10-letter sequences
+            'letters11': {},  # 11-letter sequences
+            'letters12': {},  # 12-letter sequences
+            'letters13': {},  # 13-letter sequences
+            'letters14': {},  # 14-letter sequences
+            'letters15': {},  # 15-letter sequences
+            'letters16': {},  # 16-letter sequences
+            'letters17': {},  # 17-letter sequences
+            'letters18': {},  # 18-letter sequences
         }
 
         self.source_file = source_file
