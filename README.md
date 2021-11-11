@@ -119,7 +119,8 @@ VERSION HISTORY :
 
 
 
-========================================================================================================================
+--------------------
+--------------------
 
 INITIAL DRAFT NOTES :
 ------------------------------------------------------------------------------------------------------------------------
@@ -141,7 +142,6 @@ A Clue Field may consist of one or more empty fields that form a closed shape
     (e.g. rectangle of 2 fields or square of foue)
 
 
------------------------
 - The TASK is to:
 
     The task is to take an empty structure and fill it completely with clues and answers.
@@ -181,7 +181,7 @@ A Clue Field may consist of one or more empty fields that form a closed shape
     The Surface filled as a crossword with Words and Clues from Dictionary, according to Constraints.
 
 
-# Possible take - logical structure of CrossWords:
+- Possible take - logical structure of CrossWords:
     A Field structure is a graph, basically.
     Each empty field is a graph's vertex.
     Each connection between two empty fields is a graph's edge.
@@ -198,7 +198,7 @@ A Clue Field may consist of one or more empty fields that form a closed shape
         This direction, together with first field, is indicated by the clue field.
 
 
-# Possible take - search algorithm
+- Possible take - search algorithm
     Look at Words as:
     sequence of letters with additional 'letter' that is actually the hint that must be 'attached' to the Word.
         This 'hint letter' does not have to follow the line.
