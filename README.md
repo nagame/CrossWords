@@ -1,7 +1,125 @@
 # CrossWords
 A python module with tools for generating various crossword puzzles.
 
-
+------------------------------------------------------------------------------------------------------------------------
+VERSION HISTORY :
+------------------------------------------------------------------------------------------------------------------------
+# #####################################################################################################################
+# Change History
+#   v1.5
+#     *** check out demo function try_me_grid()
+#     - initially working grid crossword generator with multiline string grid definition
+#       (see try_me_2 for details)
+#     - bug fixes, various modifications
+#   v1.4.2
+#     - class GridCrossWord: initially working conversion from string to Word/Cell structure
+#        still fixing minor details
+#     - class Word: modified _cells_to_sequences function: only convert cells containing actual letters
+#       (more like a-z than %,& or _)
+#   v1.4.1
+#     - class GridCrossWord: working on conversion from string to Word/Cell structure
+#   v1.4
+#     - new class GridCrossWord for constrcting crosswords inside 2d array of Cells
+#       using Sequence, Dictionary, Cell and Word classes
+#       * check out function 'sample' inside this GridCrossWord class
+#   v1.3.1
+#     - class CrossWords: modified __cells_to_sequence - bugfix
+#     - minor fixes
+#     - - class CrossWords: renamed to Word
+#   v1.3 (kinda functional?)
+#     *** check out demo function try_me_2
+#     * this version SEEMS to be capable of generating simple grid crosswords
+#     - added demo function "try_me_2" for creating simple grid crossword
+#     - printing the grid containing (hopefully) crossword(s)
+#     - Working on defining Words in space, generating new type of crossword puzzle
+#   v1.2.1
+#     - class CrossWord: development of core structure
+#     - class Cell: development of core structure
+#   V1.2
+#     - started implementing new classes:
+#       -- Cell: a logical cell in a crosswords diagram (e.g. empty place for letter, huint, etc)
+#       -- CrossWord: single word in a crosswords diagram: contains Cell(s), Sequence(s)
+#   v1.1.1
+#     - Dictionary class: added 'session' attribute -
+#        for gathering meta-data or 'session' stats, eg. dict loading time, number of uses, etc
+#     - Dictionary class: match_words now works with no *args
+#     - minor changes
+#   v1.1
+#     - implemented function 'simple_crossword_2' which words like 'simple_crossword'
+#       but also accepts an iterable of lengths and letter positions for solution words.
+#       letter positions may be negative (from the end of a word)
+#       * sample usage in 'try_me_1' function
+#     - minor changes
+#     - modified and elaborated, metadata and comments. Clean up.
+#   v1.0(functional, actualy useful) <<<=====
+#     *** this version can actually generate a legit crossword - yey ^^
+#     *** see function try_me_1() for ane xample !
+#     - implemented simple crossword generator function
+#       take a look at: function 'simple_crossword'
+#     - class Dictionary: commented out sequences sorting code - not necessary atm
+#     - various changes
+#   ------------
+#   v0.3.5
+#     - layout changes to enable code to be imported as module
+#     - various changes
+#     - working on simple, sample crossword generator
+#   v0.3.4
+#     - various fixes
+#     - removed origin_words functions (merged into match_words)
+#     - Sequence class: added 'inWord' now accounting for negative position (from the end of a word)
+#   v0.3.3
+#     - Sequence class: added 'inWord' function that determines if sequence belong to a word (accounting position)
+#     - Sequence class: added match_words function that accepts arbitrary number of sequences and word length
+#   v0.3.2
+#     - Sequence class: working on 'origin_words_2' function that accepts 2 Sequence objects
+#     - Sequence class: added 'origin_words_1' functino - this one accepts a single Sequence object
+#     - Sequence class: added 'position' attribute - absttract sequence position in a virtual word,
+#                       changed init args
+#     - minor changes (printing, etc)
+#   v0.3.1
+#     - various considerable changes
+#   v0.3(functional)
+#     *** this version is fine for running in an interactive session
+#     *** run the code - this will load dictionary file and then play with 'origin_words' live
+#     - moved code to a new class Dictionary
+#     - implemented function "origin_words" that returns all words (of any or given length)
+#       that contain particular sequence (at any or given position)
+#     - generalized sorting code
+#     - whole words are no more in letter-sequences unless they are actually also a part of other words
+#     - various changes: structural, others
+#     - minor changes (e.g. removed plotly histogram examples code)
+#   v0.2.2
+#     - further implementation of Sequence class
+#     - implemented logical connections between Sequence objects
+#     - various changes: printing, structure, etc.
+#   v0.2.1
+#     - started implementing Sequence class
+#       this class will represent a sequence of letters (not necessarily a whole, legit word but also)
+#     - started creating sequence dictionaries with objects and conneting them together
+#   v0.2(functional)
+#     *** this version is fine for just statistical analysis of a word list
+#     *** namely: generate dictionaries of sequences of letters (different lengths)
+#     ***         together with information how many ocurrances of each sequence there are
+#   v0.1.4
+#     - generalized similar, repeating pieces of code for counting n-letter sequences
+#       (this seems to have worsened the performance by a bit, but makes it sooo much easie rto work with the code)
+#   v0.1.3
+#     - counting sequences up to 14 letters long
+#     - all sequences dictionaries sorted by number of occurances
+#     - minor changes in structure
+#   v0.1.2
+#     - counting sequences up to 12-letters long
+#     - various changes in code structure
+#   v0.1.1
+#     - counting sequences of 1-,2-,3-,4-,5-,6- and 7-letters
+#     - added memory info printout
+#     - added loading progress printout
+#   v0.1
+#     - added loading dictionary from txt file
+#     - added statistics: word count, words' lengths count, avg word len, letter count, 2-letter pairs count,
+#     - added histograms (plotly) - words' lengths and single letter occurances
+#
+# #####################################################################################################################
 
 
 
